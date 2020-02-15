@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first">
+        <canvas id="c"></canvas>
+        <div id="pyramid" class="diagram left"></div>
+        <div id="box" class="diagram right"></div>    
+    
+        <header class="header">
+            <nav>
+                <div class="logoContainer">
+                    <span class="logo"><a>ThreeLuminaty</a></span>
+                </div>
+                <div class="ulContainer">
+                    <ul id="navigation">
+                        <li id="link"><a>Home</a></li>
+                        <li id="link"><a>About</a></li>
+                        <li id="link"><a>Shop</a></li>
+                        <li id="link"><a>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="titleCss">CSS3D</h1>
+        <div class="css3d">
+            <img class="css3dImg" src="./assets/img/feuille.jpg" alt="404">
+        </div>
+        <p class="explication">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa nulla at pariatur velit illo sequi necessitatibus cumque, voluptas eveniet suscipit repellendus laboriosam vel earum quisquam facilis asperiores. Assumenda, expedita?</p>
+        </section>
+
+        <section class="second">
+            <h1 class="titleDistortion">DistortionEffect</h1>
+            <p class="distortionExplication">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quibusdam, fuga rem consequatur laudantium esse voluptatem perspiciatis praesentium odit necessitatibus rerum ex delectus quasi eius quam quos. Ex, at aliquam!</p>
+            <div class="wrapper reveal"></div>
+        </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./assets/js/three.min.js"></script>
+    <script src="./assets/js/GLTFLoader.js"></script>
+    <script src="./assets/js/hover-effect.umd.js"></script>
+    <script src="./assets/js/css3d.js"></script>
+    <script src="./assets/js/issam.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+
+    <script>
+        var hoverDistort = new hoverEffect({
+        parent: document.querySelector('.wrapper'),
+        intensity: 1,
+        image1: './assets/img/feuille.jpg',
+        image2: './assets/img/orange.jpg',
+        displacementImage: './assets/img/4.png'
+        });
+    </script>
+
+</body>
+</html>
