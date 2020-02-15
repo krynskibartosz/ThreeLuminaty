@@ -186,6 +186,10 @@ body .second .titleDistortion {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body .second .distortionExplication {

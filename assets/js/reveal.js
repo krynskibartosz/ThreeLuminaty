@@ -11,7 +11,7 @@ const handleIntersection = (entries, observer) => {
         entry.target.classList.add("reveal-visible")
         observer.unobserve(entry.target)
     }
-        // else{
+        // else{    
         //     console.log("invisible");
         // }
         console.log(entry.intersectionRatio);   
@@ -22,5 +22,5 @@ const handleIntersection = (entries, observer) => {
 
 const observer = new IntersectionObserver(handleIntersection, options)
 
-observer.observe(document.querySelector(".reveal"))
+document.querySelectorAll(".reveal").forEach((reveal) => observer.observe(reveal))
 

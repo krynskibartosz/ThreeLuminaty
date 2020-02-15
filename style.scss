@@ -127,7 +127,9 @@ body{
             grid-row: 1 / span 1;
             display: flex;
             justify-content: center;
-            color: #fff;        
+            color: #fff;   
+            height: 100%;
+            align-items: flex-end;     
         }
 
         & .distortionExplication{
