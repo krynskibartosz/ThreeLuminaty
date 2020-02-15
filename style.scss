@@ -18,7 +18,7 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    background: rgb(20, 20, 20);
+    background-image: linear-gradient(to right bottom, #1b1a1a, #181717, #151414, #121111, #0e0d0d);
     perspective: 900px;
     width: 100%;
     overflow-x: hidden;
@@ -42,7 +42,7 @@ body{
             }
             & .right {
                 z-index: -1;
-                grid-column: 7 / span 6;
+                grid-column: 2 / span 10;
                 grid-row: 2 / span 6;
                 width: 100%;
                 height: auto;
@@ -65,7 +65,7 @@ body{
                     justify-content: center;
                     margin: .5em;
                     & .logo{
-                        color: #fff;
+                        color: #14CCA4;
                         display: flex;
                         align-items: center;
                         cursor: pointer;
@@ -84,7 +84,7 @@ body{
                         & #link{
                             margin-top: .2em;
                             margin-right: .5em;
-                            color: #fff;
+                            color: #14CCA4;
                             & a{
                                 cursor: pointer;
                             }
@@ -95,7 +95,7 @@ body{
         }
 
         & .titleCss{
-            grid-column: 6/ span 2;
+            grid-column: 2/ span 1;
             grid-row: 2 / span 1;
             display: flex;
             justify-content: center;
@@ -103,8 +103,8 @@ body{
         }
 
         & .css3d{
-            grid-column: 3 / span 4;
-            grid-row: 3 / span 2;
+            grid-column: 2 / span 4;
+            grid-row: 3 / span 1;
             backface-visibility: hidden;
         }                                           
         & .css3dImg{
@@ -115,7 +115,10 @@ body{
         & .explication{
             grid-column: 8/ span 3;
             grid-row: 3 / span 1;
-            color: #52A0AE;        
+            color: #EE00FF;        
+            font-weight: 550;
+            display: flex;
+            margin: 0;
         }
     }
 
@@ -123,8 +126,8 @@ body{
         @extend %gridTemplate;
 
         & .titleDistortion{
-            grid-column: 6/ span 2;
-            grid-row: 1 / span 1;
+            grid-column: 3/ span 1;
+            grid-row: 2 / span 1;
             display: flex;
             justify-content: center;
             color: #fff;   
@@ -135,7 +138,7 @@ body{
         & .distortionExplication{
             grid-row: 3 / span 3;
             grid-column: 3 / span 3;
-            color: #fff;
+            color: #EE00FF;
         }
         
         & .reveal{
