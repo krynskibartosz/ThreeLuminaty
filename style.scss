@@ -12,7 +12,30 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+
 }
+::-webkit-scrollbar{
+    width: 11px; 
+    background: linear-gradient(to bottom, #1b1a1a, #181717, #151414, #121111, #0e0d0d);
+}
+
+::-webkit-scrollbar:hover{
+    width: 11px; 
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: linear-gradient(transparent,rgb(195, 18, 207));
+    transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 6px;
+    background: linear-gradient(transparent,rgb(21, 170, 138));
+}
+
+
+
 
 body{
     margin: 0;
@@ -23,7 +46,6 @@ body{
     width: 100%;
     overflow-x: hidden;
     
-
     & .first{
         & #c {
             position: absolute;
@@ -98,14 +120,13 @@ body{
         }
 
         & .titleCss{
-            grid-column: 2/ span 1;
+            grid-column: 2/ span 2;
             grid-row: 2 / span 1;
-            display: flex;
-            justify-content: center;
-            color: #fff;        
+            background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);   
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;      
         }
-
-        & .css3d{
+            & .css3d{
             grid-column: 2 / span 4;
             grid-row: 3 / span 1;
             backface-visibility: hidden;
@@ -128,18 +149,19 @@ body{
         @extend %gridTemplate;
 
         & .titleDistortion{
-            grid-column: 2/ span 1;
+            grid-column: 2/ span 2;
             grid-row: 2 / span 1;
             display: flex;
             justify-content: center;
-            color: #fff;   
             height: 100%;
-            align-items: flex-end;     
+            align-items: flex-end;   
+            background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #d606e5, #e004f0, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;       
         }
 
         & .distortionExplication{
             grid-row: 3 / span 3;
-            grid-column: 2 / span 3;
+            grid-column: 2 / span 4;
             color: #EE00FF;
         }
         

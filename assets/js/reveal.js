@@ -23,4 +23,3 @@ const handleIntersection = (entries, observer) => {
 const observer = new IntersectionObserver(handleIntersection, options)
 
 document.querySelectorAll(".reveal").forEach((reveal) => observer.observe(reveal))
-

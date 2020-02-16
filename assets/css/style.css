@@ -12,6 +12,31 @@ body .first, body .second {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b1a1a), color-stop(#181717), color-stop(#151414), color-stop(#121111), to(#0e0d0d));
+  background: linear-gradient(to bottom, #1b1a1a, #181717, #151414, #121111, #0e0d0d);
+}
+
+::-webkit-scrollbar:hover {
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#c312cf));
+  background: linear-gradient(transparent, #c312cf);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#15aa8a));
+  background: linear-gradient(transparent, #15aa8a);
 }
 
 body {
@@ -138,18 +163,15 @@ body .first .header nav .ulContainer #navigation #link a {
 
 body .first .titleCss {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/ span 1;
+  -ms-grid-column-span: 2;
+  grid-column: 2/ span 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#b80bc4), color-stop(#c20acf), color-stop(#cc08da), color-stop(#a45eff), color-stop(#617dff), color-stop(#008fff), color-stop(#00a7ff), color-stop(#00b8e9), color-stop(#00c4c8), to(#14cca4));
+  background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body .first .css3d {
@@ -184,8 +206,8 @@ body .first .explication {
 
 body .second .titleDistortion {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/ span 1;
+  -ms-grid-column-span: 2;
+  grid-column: 2/ span 2;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
@@ -195,11 +217,14 @@ body .second .titleDistortion {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
   height: 100%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#b80bc4), color-stop(#c20acf), color-stop(#cc08da), color-stop(#d606e5), color-stop(#e004f0), color-stop(#a45eff), color-stop(#617dff), color-stop(#008fff), color-stop(#00a7ff), color-stop(#00b8e9), color-stop(#00c4c8), to(#14cca4));
+  background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #d606e5, #e004f0, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body .second .distortionExplication {
@@ -207,8 +232,8 @@ body .second .distortionExplication {
   -ms-grid-row-span: 3;
   grid-row: 3 / span 3;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2 / span 3;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / span 4;
   color: #EE00FF;
 }
 
