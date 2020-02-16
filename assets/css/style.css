@@ -54,9 +54,9 @@ body .first .right {
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2 / span 10;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-row-span: 6;
-  grid-row: 2 / span 6;
+  grid-row: 3 / span 6;
   width: 100%;
   height: auto;
 }
@@ -90,6 +90,7 @@ body .first .header nav .logoContainer {
       -ms-flex-pack: center;
           justify-content: center;
   margin: .5em;
+  height: 100%;
 }
 
 body .first .header nav .logoContainer .logo {
@@ -117,6 +118,10 @@ body .first .header nav .ulContainer #navigation {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   list-style-type: none;
   margin: 0;
 }
@@ -165,13 +170,12 @@ body .first .css3dImg {
 
 body .first .explication {
   -ms-grid-column: 8;
-  -ms-grid-column-span: 3;
-  grid-column: 8/ span 3;
+  -ms-grid-column-span: 4;
+  grid-column: 8/ span 4;
   -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / span 1;
+  -ms-grid-row-span: 4;
+  grid-row: 3 / span 4;
   color: #EE00FF;
-  font-weight: 550;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,9 +183,9 @@ body .first .explication {
 }
 
 body .second .titleDistortion {
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 3/ span 1;
+  grid-column: 2/ span 1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
@@ -202,9 +206,9 @@ body .second .distortionExplication {
   -ms-grid-row: 3;
   -ms-grid-row-span: 3;
   grid-row: 3 / span 3;
-  -ms-grid-column: 3;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 3;
-  grid-column: 3 / span 3;
+  grid-column: 2 / span 3;
   color: #EE00FF;
 }
 
