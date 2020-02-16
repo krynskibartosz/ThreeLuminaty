@@ -62,13 +62,6 @@ body{
             grid-column: 8 / span 4;
             grid-row: 2 / span 4;
             }
-            & .right {
-                z-index: -1;
-                grid-column: 2 / span 10;
-                grid-row: 3 / span 6;
-                width: 100%;
-                height: auto;
-                }
             @extend %gridTemplate;
         & .header{
             display: grid;
@@ -118,7 +111,13 @@ body{
                 }
             }             
         }
-
+        & .main{
+            display: grid;
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+        }
         & .titleCss{
             grid-column: 2/ span 2;
             grid-row: 2 / span 1;
@@ -128,7 +127,7 @@ body{
         }
             & .css3d{
             grid-column: 2 / span 4;
-            grid-row: 3 / span 1;
+            grid-row: 3 / span 3;
             backface-visibility: hidden;
         }                                           
         & .css3dImg{
@@ -138,11 +137,18 @@ body{
 
         & .explication{
             grid-column: 8/ span 4;
-            grid-row: 3 / span 4;
+            grid-row: 3 / -1;
             color: #EE00FF;        
             display: flex;
             margin: 0;
         }
+        & .right {
+            z-index: -1;
+            grid-column: 1 / -1;
+            grid-row: 4 / -2;
+            width: 100%;
+            height: auto;
+            }
     }
 
     & .second{
@@ -155,7 +161,8 @@ body{
             justify-content: center;
             height: 100%;
             align-items: flex-end;   
-            background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #d606e5, #e004f0, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);            -webkit-background-clip: text;
+            background-image: linear-gradient(to right bottom, #248e77, #21997e, #1ea585, #1ab08c, #17bc93, #00c1b1, #00c5cb, #00c7e0, #009de0, #777fff, #cf77ff, #ee00ff); 
+            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;       
         }
 
