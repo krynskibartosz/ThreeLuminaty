@@ -19,3 +19,18 @@ console.log(mouve);
         mouve.style.transform = "none"
         mouve.style.transition = '.5s'
     })
+
+
+
+    // let child1 = document.querySelector('.enfant1');
+    // let child2 = document.querySelector('.enfant2');
+    // let child3 = document.querySelector('.enfant3');
+    // let child4 = document.querySelector('.enfant4');
+
+    // document.getElementById('enfant1').addEventListener("mousemove", (e) => {
+    //     let x = e.clientX;
+    //     let y = e.clientY;
+    //     console.log(`l'axe X = ${x} \n l'axe Y = ${y}`);
+    //     console.log('ok');
+    // })
+    
