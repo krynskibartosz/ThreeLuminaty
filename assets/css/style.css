@@ -164,9 +164,9 @@ body .first .titleCss {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/ span 2;
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 2 / span 1;
+  grid-row: 1 / span 1;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#b80bc4), color-stop(#c20acf), color-stop(#cc08da), color-stop(#a45eff), color-stop(#617dff), color-stop(#008fff), color-stop(#00a7ff), color-stop(#00b8e9), color-stop(#00c4c8), to(#14cca4));
   background-image: linear-gradient(to right bottom, #b80bc4, #c20acf, #cc08da, #a45eff, #617dff, #008fff, #00a7ff, #00b8e9, #00c4c8, #14cca4);
   -webkit-background-clip: text;
@@ -177,9 +177,9 @@ body .first .css3d {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / span 4;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 3;
-  grid-row: 3 / span 3;
+  grid-row: 2 / span 3;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -193,7 +193,7 @@ body .first .explication {
   -ms-grid-column: 8;
   -ms-grid-column-span: 4;
   grid-column: 8/ span 4;
-  grid-row: 3 / -1;
+  grid-row: 2 / -1;
   color: #EE00FF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,24 +204,23 @@ body .first .explication {
 body .first .right {
   z-index: -1;
   grid-column: 1 / -1;
-  grid-row: 4 / -2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 6;
+  grid-row: 2 / span 6;
   width: 100%;
   height: auto;
 }
 
 body .second .titleDistortion {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/ span 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/ span 3;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100%;
   -webkit-box-align: end;
       -ms-flex-align: end;

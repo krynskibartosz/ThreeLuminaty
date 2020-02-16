@@ -1,7 +1,7 @@
 const options = {
     root : null,
     rootMargin : '0px',
-    threshold : .75
+    threshold : .7
 }
 
 const handleIntersection = (entries, observer) => {
