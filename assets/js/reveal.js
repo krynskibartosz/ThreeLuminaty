@@ -7,7 +7,7 @@ const options = {
 const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
         if(entry.intersectionRatio > options.threshold){
-        console.log("visible");
+        console.log("70% visible");
         entry.target.classList.add("reveal-visible")
         observer.unobserve(entry.target)
     }

@@ -227,9 +227,37 @@ body .first .css3d :nth-child(4) {
   grid-row: 2 / span 1;
 }
 
-body .first .anim:hover {
+body .first .animOne:hover {
   -webkit-transform: rotateY(-5deg) rotateX(5deg);
           transform: rotateY(-5deg) rotateX(5deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .first .animTwo:hover {
+  -webkit-transform: rotateY(10deg) rotateX(10deg);
+          transform: rotateY(10deg) rotateX(10deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .first .animThree:hover {
+  -webkit-transform: rotateY(-5deg) rotateX(5deg);
+          transform: rotateY(-5deg) rotateX(5deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .first .animFour:hover {
+  -webkit-transform: rotateY(-5deg) rotateX(5deg);
+          transform: rotateY(-5deg) rotateX(5deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .first .base {
+  -webkit-transform: rotateY(0deg) rotateX(0deg);
+          transform: rotateY(0deg) rotateX(0deg);
   -webkit-transition: 1s;
   transition: 1s;
 }

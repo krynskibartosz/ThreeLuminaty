@@ -136,6 +136,7 @@ body{
             background-size: contain;
             background-position:center;
             transition: 1s;
+
             & :nth-child(1){
                 grid-column: 1 / span 1;
                 grid-row: 1 / span 1;
@@ -154,8 +155,28 @@ body{
             }   
              
         }          
-        & .anim:hover{
+        & .animOne:hover{
             transform: rotateY(-5deg) rotateX(5deg);
+            transition: 1s;
+        }
+
+        & .animTwo:hover{
+            transform: rotateY(10deg) rotateX(10deg);
+            transition: 1s;
+    }
+
+        & .animThree:hover{
+            transform: rotateY(-5deg) rotateX(5deg);
+            transition: 1s;
+        }
+
+        & .animFour:hover{
+            transform: rotateY(-5deg) rotateX(5deg);
+            transition: 1s;
+        }
+
+        & .base{
+            transform: rotateY(0deg) rotateX(0deg);
             transition: 1s;
         }
                              
