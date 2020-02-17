@@ -1,36 +1,48 @@
-let mouve = document.querySelector('.css3d');
-console.log(mouve);
+
+let parent = document.querySelector(".css3d")
+
+console.log(parent);
+
+let childOne = document.querySelector(".child1")
+console.log(childOne);
+
+let childTwo = document.querySelector(".child2")
+console.log(childTwo);
+
+let childThree = document.querySelector(".child3")
+console.log(childThree);
+
+let childFour = document.querySelector(".child4")
+console.log(childFour);
 
 
-    mouve.addEventListener("mousemove", (e) => {
-        let x = -e.clientX / 20
-        let y = e.clientY / 22
-
-        console.log(`l'axe X = ${x}`);
-        console.log(`l'axe Y = ${y}`);
-            mouve.style.transform = `rotateY(${y}deg) rotateX(${x}deg)`
-            console.log('première condition');
-            //             mouve.style.transform = `rotateY(${y - 2}deg) rotateX(${x}deg)`
-            // console.log('else');
-            
-    })
-
-    mouve.addEventListener("mouseout", () => {
-        mouve.style.transform = "none"
-        mouve.style.transition = '.5s'
-    })
+const childOnePos = childOne.addEventListener("mouseover", (e) => {
+    let childOneX = e.clientX;
+    let childOneY = e.clientY;
+    console.log(`Enfant 1 AxeX = ${childOneX}, AxeY = ${childOneY}`);
+    parent.classList.add("anim")
+})
 
 
+const childTwoPos = childTwo.addEventListener("mouseover", (e) => {
+    let childTwoX = e.clientX;
+    let childTwoY = e.clientY;
+    console.log(`Enfant 2 AxeX = ${childTwoX}, AxeY = ${childTwoY}`);
+})
 
-    // let child1 = document.querySelector('.enfant1');
-    // let child2 = document.querySelector('.enfant2');
-    // let child3 = document.querySelector('.enfant3');
-    // let child4 = document.querySelector('.enfant4');
+const childThreePos = childThree.addEventListener("mouseover", (e) => {
+    let childThreeX = e.clientX;
+    let childThreeY = e.clientY;
+    console.log(`Enfant 3 AxeX = ${childThreeX}, AxeY = ${childThreeY}`);
+})
 
-    // document.getElementById('enfant1').addEventListener("mousemove", (e) => {
-    //     let x = e.clientX;
-    //     let y = e.clientY;
-    //     console.log(`l'axe X = ${x} \n l'axe Y = ${y}`);
-    //     console.log('ok');
-    // })
-    
+const childFourPos = childFour.addEventListener("mouseover", (e) => {
+    let childFourX = e.clientX;
+    let childFourY = e.clientY;
+    console.log(`Enfant 4 AxeX = ${childFourX}, AxeY = ${childFourY}`);
+
+})
+
+
+
+

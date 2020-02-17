@@ -1,4 +1,4 @@
-var clock = new THREE.Clock();
+let clock = new THREE.Clock();
 let house;
 function main() {
     const canvas = document.querySelector('#c');
