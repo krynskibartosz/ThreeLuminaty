@@ -52,12 +52,12 @@ body {
   overflow-x: hidden;
 }
 
-body .first #c {
+/* body .first #c {
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1;
-}
+} */
 
 body .first .diagram {
   width: 100%;
