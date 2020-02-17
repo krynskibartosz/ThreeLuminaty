@@ -57,11 +57,6 @@ body{
             width: 100%;
             height: 100%;
             }
-            & .left {
-            z-index: -1;
-            grid-column: 8 / span 4;
-            grid-row: 2 / span 4;
-            }
             @extend %gridTemplate;
         & .header{
             display: grid;
@@ -128,16 +123,18 @@ body{
             & .css3d{
             display: grid;
             grid-column: 2 / span 4;
-            grid-row: 2 / -5;
+            grid-row: 2 / span 2;
             backface-visibility: hidden;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             height: 100%;
+            opacity: .8;
+            
             & .css3dImg{
                 width: 100%;
-                height: 100%;
+                height: auto;
                 grid-column: 1 / -1;
-                grid-row: 1 / -1;
+                grid-row: 1 / span 3;
             }
             & .enfant1{
                 grid-column: 1 / span 1;

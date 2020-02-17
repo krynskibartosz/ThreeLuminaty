@@ -64,16 +64,6 @@ body .first .diagram {
   height: 100%;
 }
 
-body .first .left {
-  z-index: -1;
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 4;
-  grid-column: 8 / span 4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 4;
-  grid-row: 2 / span 4;
-}
-
 body .first .header {
   display: -ms-grid;
   display: grid;
@@ -179,7 +169,9 @@ body .first .css3d {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / span 4;
-  grid-row: 2 / -5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -ms-grid-columns: 1fr 1fr;
@@ -187,13 +179,16 @@ body .first .css3d {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   height: 100%;
+  opacity: .8;
 }
 
 body .first .css3d .css3dImg {
   width: 100%;
-  height: 100%;
+  height: auto;
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
 }
 
 body .first .css3d .enfant1 {
