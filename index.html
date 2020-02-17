@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <section class="first">
-        <canvas id="c"></canvas>
-        <div id="pyramid" class="diagram left"></div>
+        <!-- <canvas id="c"></canvas>
+        <div id="pyramid" class="diagram left"></div> -->
     
         <header class="header">
             <nav>
@@ -36,12 +37,11 @@
                 <div id="enfant2" class="child2"></div>
                 <div id="enfant3" class="child3"></div>
                 <div id="enfant4" class="child4"></div>
-                <!-- <img class="css3dImg" src="./assets/img/meuf3d.jpg" alt="404"> -->
             </div>
-            <p class="explication">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab expedita voluptatum, maxime, reprehenderit deleniti accusantium sequi, adipisci porro eum in harum est dolor beatae alias quo molestias vitae pariatur.
-            Sunt eveniet illum molestias, nisi recusandae hic, sint velit eum natus id amet at unde ipsa laborum ea reiciendis temporibus quisquam pariatur minus perspiciatis optio officia cupiditate, sequi voluptate. Accusantium!
-            Ipsa quam consequuntur minima repellat explicabo exercitationem nisi provident laborum. Quis esse, voluptate ipsa ratione porro aperiam at, eligendi nostrum aspernatur similique iste quaerat id error natus labore voluptatum voluptatem? </p>
-            <div id="box" class="diagram right"></div>  
+            <p class="explication">Depuis .. CSS3 nous permet de faire de la 3D via le css.
+                Pour réaliser ce genre d'animation il faut utiliser de la percepctive. On la met dans plus part des cas dans le body pour avoir le meme niveau de percpective partout.
+                Cette div à un système de grille et 6 div comme enfant direct, qui vont nous servir à déterminer le degrée de rotation à effectuer pour réaliser la bonne animation dans les différents endroits </p>
+            <canvas id="import" class="diagram right"></canvas>  
             <!--! ROBOT  -->
         </main>
 
@@ -49,18 +49,16 @@
 
         <section class="second">
             <h1 class="titleDistortion reveal">Effet Distortion </h1>
-            <p class="distortionExplication reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui distinctio hic consequuntur dignissimos. Itaque a ab ipsa libero adipisci voluptates nostrum dolor fugiat commodi sit mollitia illo, placeat facere et.
-            Sapiente exercitationem ex cumque aperiam, atque iste quisquam earum labore reprehenderit non totam deserunt laborum. Illo aliquid quo id natus dolorem sequi doloremque nulla placeat repellat. Accusamus nobis harum eius.
-            Repellendus doloribus perspiciatis iste a ullam incidunt! Id, non fuga sequi, est soluta incidunt nam commodi, doloremque delectus aliquam sed odio doloribus iste quae expedita minus illo tempora! Rem, exercitationem.</p>
+            <p class="distortionExplication reveal">L'effet distortion, utilise three.js dans le but de "flouter" l'image de transition pour ainsi crée un effet de distortion. Pour un effet plus harmonieux on utilise TweenMax pour gerer la vitesse de transition entre les 2 photos</p>
             <div class="wrapper reveal"></div>
         </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="./assets/js/three.min.js"></script>
     <script src="./assets/js/GLTFLoader.js"></script>
-    <script src="./assets/js/hover-effect.umd.js"></script>
-    <script src="./assets/js/reveal.js"></script>
     <script src="./assets/js/issam.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/hover-effect.umd.js"></script>
     <script src="./assets/js//css3d.js"></script>
 
     <script>
