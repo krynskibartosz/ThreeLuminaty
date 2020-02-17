@@ -22,6 +22,17 @@ console.log(childFour);
 //     console.log(`Enfant 1 AxeX = ${childOneX}, AxeY = ${childOneY}`);
 //     parent.classList.add("animOne")
 // })
+const childOneAdd = childOne.addEventListener("mouseover", (e) => {
+    parent.classList.add("animOne")
+})
+
+const childOneDelete = childTwo.addEventListener("mouseleave", () => {
+    parent.classList.remove("animOne")
+    parent.classList.add("base")
+})
+
+
+
 
 
 const childTwoAdd = childTwo.addEventListener("mouseover", (e) => {
@@ -32,6 +43,38 @@ const childTwoDelete = childTwo.addEventListener("mouseleave", () => {
     parent.classList.remove("animTwo")
     parent.classList.add("base")
 })
+
+
+
+
+
+const childThreeAdd = childThree.addEventListener("mouseover", (e) => {
+    parent.classList.add("animThree")
+})
+
+const childThreeDelete = childThree.addEventListener("mouseleave", () => {
+    parent.classList.remove("animThree")
+    parent.classList.add("base")
+})
+
+
+
+
+const childFourAdd = childFour.addEventListener("mouseover", (e) => {
+    parent.classList.add("animFour")
+})
+
+const childFourDelete = childFour.addEventListener("mouseleave", () => {
+    parent.classList.remove("animFour")
+    parent.classList.add("base")
+})
+
+
+
+
+
+
+
 
 // const childThreePos = childThree.addEventListener("mouseover", (e) => {
 //     let childThreeX = e.clientX;

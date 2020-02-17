@@ -166,12 +166,12 @@ body{
     }
 
         & .animThree:hover{
-            transform: rotateY(-5deg) rotateX(5deg);
+            transform: rotateY(-5deg) rotateX(-5deg);
             transition: 1s;
         }
 
         & .animFour:hover{
-            transform: rotateY(-5deg) rotateX(5deg);
+            transform: rotateY(15deg) rotateX(-10deg);
             transition: 1s;
         }
 

@@ -242,15 +242,15 @@ body .first .animTwo:hover {
 }
 
 body .first .animThree:hover {
-  -webkit-transform: rotateY(-5deg) rotateX(5deg);
-          transform: rotateY(-5deg) rotateX(5deg);
+  -webkit-transform: rotateY(-5deg) rotateX(-5deg);
+          transform: rotateY(-5deg) rotateX(-5deg);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 body .first .animFour:hover {
-  -webkit-transform: rotateY(-5deg) rotateX(5deg);
-          transform: rotateY(-5deg) rotateX(5deg);
+  -webkit-transform: rotateY(15deg) rotateX(-10deg);
+          transform: rotateY(15deg) rotateX(-10deg);
   -webkit-transition: 1s;
   transition: 1s;
 }
