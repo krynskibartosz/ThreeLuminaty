@@ -15,14 +15,24 @@ console.log(childThree);
 let childFour = document.querySelector(".child4")
 console.log(childFour);
 
+let childFive = document.querySelector(".child5")
+console.log(childFive);
 
-// const childOnePos = childOne.addEventListener("mouseover", (e) => {
-//     let childOneX = e.clientX;
-//     let childOneY = e.clientY;
-//     console.log(`Enfant 1 AxeX = ${childOneX}, AxeY = ${childOneY}`);
-//     parent.classList.add("animOne")
-// })
-const childOneAdd = childOne.addEventListener("mouseover", (e) => {
+let childSix = document.querySelector(".child6")
+console.log(childSix);
+
+let childSeven = document.querySelector(".child7")
+console.log(childSeven);
+
+let childEight = document.querySelector(".child8")
+console.log(childEight);
+
+let childNine = document.querySelector(".child9")
+console.log(childNine);
+
+
+
+const childOneAdd = childOne.addEventListener("mouseover", () => {
     parent.classList.add("animOne")
 })
 
@@ -35,7 +45,7 @@ const childOneDelete = childTwo.addEventListener("mouseleave", () => {
 
 
 
-const childTwoAdd = childTwo.addEventListener("mouseover", (e) => {
+const childTwoAdd = childTwo.addEventListener("mouseover", () => {
     parent.classList.add("animTwo")
 })
 
@@ -48,7 +58,7 @@ const childTwoDelete = childTwo.addEventListener("mouseleave", () => {
 
 
 
-const childThreeAdd = childThree.addEventListener("mouseover", (e) => {
+const childThreeAdd = childThree.addEventListener("mouseover", () => {
     parent.classList.add("animThree")
 })
 
@@ -60,7 +70,7 @@ const childThreeDelete = childThree.addEventListener("mouseleave", () => {
 
 
 
-const childFourAdd = childFour.addEventListener("mouseover", (e) => {
+const childFourAdd = childFour.addEventListener("mouseover", () => {
     parent.classList.add("animFour")
 })
 
@@ -73,21 +83,63 @@ const childFourDelete = childFour.addEventListener("mouseleave", () => {
 
 
 
+const childFiveAdd = childFive.addEventListener("mouseover", () => {
+    parent.classList.add("animFive")
+})
+
+const childFiveDelete = childFive.addEventListener("mouseleave", () => {
+    parent.classList.remove("animFive")
+    parent.classList.add("base")
+})
 
 
 
-// const childThreePos = childThree.addEventListener("mouseover", (e) => {
-//     let childThreeX = e.clientX;
-//     let childThreeY = e.clientY;
-//     console.log(`Enfant 3 AxeX = ${childThreeX}, AxeY = ${childThreeY}`);
-// })
+const childSixAdd = childSix.addEventListener("mouseover", () => {
+    parent.classList.add("animSix")
+})
 
-// const childFourPos = childFour.addEventListener("mouseover", (e) => {
-//     let childFourX = e.clientX;
-//     let childFourY = e.clientY;
-//     console.log(`Enfant 4 AxeX = ${childFourX}, AxeY = ${childFourY}`);
+const childSixDelete = childSix.addEventListener("mouseleave", () => {
+    parent.classList.remove("animSix")
+    parent.classList.add("base")
+})
 
-// })
+
+
+
+const childSevenAdd = childSeven.addEventListener("mouseover", () => {
+    parent.classList.add("animSeven")
+})
+
+const childSevenDelete = childSeven.addEventListener("mouseleave", () => {
+    parent.classList.remove("animSeven")
+    parent.classList.add("base")
+})
+        
+
+
+const childEightAdd = childEight.addEventListener("mouseover", () => {
+    parent.classList.add("animEight")
+})
+
+const childEightDelete = childEight.addEventListener("mouseleave", () => {
+    parent.classList.remove("animEight")
+    parent.classList.add("base")
+            
+})
+
+
+
+
+const childNineAdd = childNine.addEventListener("mouseover", (e) => {
+    parent.classList.add("animNine")
+})
+
+const childNineDelete = childNine.addEventListener("mouseleave", () => {
+    parent.classList.remove("animNine")
+    parent.classList.add("base")
+})
+
+
 
 
 
